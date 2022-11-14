@@ -1,0 +1,496 @@
+:root{
+    --primary-text-colour:#757575;
+    --secondary-text-colour: #212121;
+    --button-background-colour:#2196F3 ;
+    --secondary-button-colour: #FFFFFF;
+
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color:var(--primary-text-colour);
+    font-style: normal
+}
+
+
+ul{
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.head-list,
+.advantage-list,
+.work-list,
+.team-list,
+.tell-list,
+.footer-adress-list,
+.portfolio-nav,
+.portfolio-example
+.clients-list{
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Хедер*/
+
+hr{
+    border: 1px solid #ECECEC;
+    margin: 0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid transparent;
+    width: 1200px;
+}
+
+.conteiner line{
+    outline: 2px solid red;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-list,
+.tell-list{
+    display: flex;
+}
+
+.head-list{
+    padding-right: 344px;
+}
+
+.link-site,
+.link-site-active,
+.link-contact{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-items:not(:last-child){
+    margin-right: 50px;
+}
+
+.logo-text{
+    color:var(--button-background-colour) ;
+}
+
+.logo{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--secondary-text-colour);
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+}
+.logo:hover,
+.logo:focus{
+    cursor: pointer;
+    color: var(--button-background-colour);
+}
+
+.link-site{
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-colour);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+
+
+nav a.link-site-active {
+    font-weight: bold;
+    color: var(--button-background-colour);
+}
+
+.link-site:hover,
+.link-site:focus{
+    color: var(--button-background-colour);
+}
+
+.link-contact{
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: var(--primary-text-colour);
+}
+
+.link-contact:hover,
+.link-contact:focus{
+    
+    color: var(--button-background-colour);
+}
+
+/*Головний блок*/
+
+.main-section{
+    text-align: center;
+    background-color: var(--primary-text-colour);
+    
+    background-image: linear-gradient( to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+
+    url(../imeges/backgroound_main.jpg);
+ 
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
+
+
+.main-title{
+    font-family: 'Roboto';
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 280px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-button-colour);
+}
+
+.button-portfolio{
+    font-family: inherit;
+    background-color: var(--button-colour);
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.button-main{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: 'Roboto';
+    margin-bottom: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    border: none;
+    letter-spacing: 0.06em;
+    background-color: var(--button-background-colour);
+    cursor: pointer;
+    border-radius: 5px ;
+    color:var(--secondary-button-colour);
+}
+
+/*Переваги*/
+
+.advantage{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--secondary-text-colour);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    
+}
+
+.advantage-text{
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-text-colour);
+}
+
+
+.advantage-items::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.antena::before{
+    background-image: url(../imeges/icons.svg/antena.svg);
+}
+
+.clock::before{
+    background-image: url(../imeges/icons.svg/clock.svg);
+}
+
+.pc::before{
+    background-image: url(../imeges/icons.svg/pc.svg);
+}
+
+.astronaut::before{
+    background-image: url(../imeges/icons.svg/astronaut.svg);
+}
+
+.advantage-list{
+    margin-top: 94px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+
+
+/*Чим ми займаємося*/
+
+
+.work-title{
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--secondary-text-colour);
+}
+
+.work-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Наша команда*/
+
+
+
+.work-card{
+    background-color:#FFFFFF;
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+
+.team-section{
+    background-color: #F5F4FA;
+    text-align: center;
+}
+
+.team-title{
+    margin-top: 94px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--secondary-text-colour);
+}
+.name{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--secondary-text-colour);
+}
+.name-work{
+    padding-bottom: 30px;   
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-colour);
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Постійні клієнти*/
+
+.clients-list{
+    display: flex;
+}
+
+.client{
+    display: block;
+    background-color: blueviolet;
+    margin-right: 30px;
+    
+}
+
+
+/*Футер*/
+
+.logo-footer{
+    margin-bottom: 9px;
+    display: block;
+    padding-top: 56px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    color: var(--secondary-button-colour);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.adress-footer{
+    margin-bottom: 9px;
+}
+
+.footer-adress-list{
+    padding-bottom: 60px;
+}
+
+footer{
+    background-color: #2F303A;
+}
+
+.adress-title{
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height:1.7;
+    color: var(--secondary-button-colour);
+
+}
+.adress-title:hover,
+.adress-title:focus{
+    color: var(--button-background-colour);
+}
+
+.logo-footer:hover,
+.logo-footer:focus{
+    cursor: pointer;
+    color: var(--button-background-colour);
+}
+
+.foter-link-contact{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.foter-link-contact:hover,
+.foter-link-contact:focus{
+    color: #2196F3;
+}
+
+
+/* Портфоліо*/
+.portfolio-main{
+    background-color: #F5F5F5;
+}
+
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 56px;
+}
+
+
+.portfolio-list:not(:last-child){
+    margin-right: 8px;
+}
+
+.button-portfolio{
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    
+    border: none;
+    background-color: #F5F4FA;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button-portfolio:hover{
+    background-color: var(--button-background-colour);
+    color: var(--secondary-button-colour);  
+}
+
+.button-portfolio:focus{
+    background-color: var(--button-background-colour);
+    color: var(--secondary-button-colour);
+}
+
+
+
+.projekt-portfolio{
+    margin-top: 20px;
+    font-weight: 700;
+    margin-left: 24px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-colour);
+}
+
+.projekt-type{
+    margin-left: 24px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-colour);
+}
+
+
+/*пробы*/
+
+
+.portfolio-example{
+    padding-bottom: 94px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.portfolio-card{
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-card:nth-child(3n){
+    margin-right: 0;
+}
+
+.portfolio-card:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
