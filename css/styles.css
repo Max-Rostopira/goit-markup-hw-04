@@ -179,6 +179,9 @@ nav a.link-site-active {
     fill: var(--button-background-colour);
 }
 
+.link-contact:focus > .header-icon{
+    fill: var(--button-background-colour);
+}
 /*====================Головний блок==========================*/
 
 .main-section{
@@ -445,12 +448,14 @@ nav a.link-site-active {
     border-radius: 4px;
 }
 
-.clients-link:hover{
+.clients-link:hover,
+.clients-link:focus{
     border: 1px solid var(--button-background-colour);
 }
    
 
-.clients-icon:hover{
+.clients-icon:hover,
+.clients-icon:focus{
     fill: var(--button-background-colour);
 }
 
