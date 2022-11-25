@@ -56,9 +56,6 @@ img{
     display: block;
 }
 
-svg {
-    fill: #AFB1B8;
-}
 
 /*=====================Хедер=========================*/
 
@@ -179,8 +176,12 @@ nav a.link-site-active {
     fill: var(--button-background-colour);
 }
 
-.link-contact:focus > .header-icon{
-    fill: var(--button-background-colour);
+svg{
+    fill: currentColor;
+}
+
+/*.link-contact:focus > .header-icon{
+     fill: var(--button-background-colour);
 }
 /*====================Головний блок==========================*/
 
@@ -411,11 +412,16 @@ nav a.link-site-active {
     background-color: var(--button-background-colour);
 }
 
+.cotiale-icon{
+    fill: #AFB1B8;
+}
+
 .cotiale-link:hover .cotiale-icon,
 .cotiale-link:focus .cotiale-icon{
     background-color: var(--button-background-colour);
     fill: #EEEEEE;
 }
+
 
 .cotiale-list {
     margin-top: 16px;
@@ -432,9 +438,9 @@ nav a.link-site-active {
 }
 
 .clients-icon{
-    
     height: 92px;
     width: 170px;
+    fill: #AFB1B8;
 }
 
 .clients-list{
@@ -443,22 +449,23 @@ nav a.link-site-active {
 }
 
 .clients-link{
-    display: block;    
+    display: flex;    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    width: 170px;
+    height: 92px;
 }
 
 .clients-link:hover,
 .clients-link:focus{
     border: 1px solid var(--button-background-colour);
+    fill: var(--button-background-colour);
 }
-   
 
 .clients-icon:hover,
 .clients-icon:focus{
     fill: var(--button-background-colour);
 }
-
 
 
 /*=======================Футер============================*/
@@ -542,6 +549,7 @@ nav a.link-site-active {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    
 }
 
 
@@ -550,12 +558,10 @@ nav a.link-site-active {
     background-color: var(--button-background-colour);
 }
 
-.cotiale-footer-link:hover .cotiale-footer-icon,
-.cotiale-footer-link:focus .cotiale-footer-icon{
-    background-color: var(--button-background-colour);
-    
+.cotiale-footer-icon:hover,
+.cotiale-footer-iconfocus{
+    fill: white;
 }
-
 
 .addres-container{
     display: flex;
@@ -680,9 +686,13 @@ nav a.link-site-active {
     width: 370px;
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-link{
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card:nth-child(3n) {
