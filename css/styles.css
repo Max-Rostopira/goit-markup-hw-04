@@ -166,7 +166,7 @@ nav a.link-site-active {
 }
 
 .header-icon{
-    
+    fill: #757575;
     display: flex;
     margin-right: 10px;
 }
