@@ -172,17 +172,11 @@ nav a.link-site-active {
 }
 
 
-.link-contact:hover > .header-icon{
-    fill: var(--button-background-colour);
+.link-contact:hover .header-icon,
+.link-contact:focus .header-icon {
+    fill: currentColor
 }
 
-svg{
-    fill: currentColor;
-}
-
-/*.link-contact:focus > .header-icon{
-     fill: var(--button-background-colour);
-}
 /*====================Головний блок==========================*/
 
 .main-section{
