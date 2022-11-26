@@ -449,6 +449,7 @@ svg{
 }
 
 .clients-link{
+    outline: transparent;
     display: flex;    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -462,10 +463,11 @@ svg{
     fill: var(--button-background-colour);
 }
 
-.clients-icon:hover,
-.clients-icon:focus{
-    fill: var(--button-background-colour);
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+fill: var(--button-background-colour);
 }
+
 
 
 /*=======================Футер============================*/
@@ -687,6 +689,7 @@ svg{
 }
 
 .portfolio-link{
+    outline: transparent;
     display: block;
 }
 
