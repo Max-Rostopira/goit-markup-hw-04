@@ -132,12 +132,8 @@ img{
 
 
 
-nav a.link-site-active {
+.active {
     color: var(--button-background-colour);
-
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
 }
 
 .link-site:hover,
@@ -287,7 +283,6 @@ nav a.link-site-active {
     margin-bottom: 30px;
 
     display: flex;
-    width: 270px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -297,6 +292,8 @@ nav a.link-site-active {
 }
 
 .advantage-icon {
+    width: 70px;
+    height: 70px;
     justify-content: center;
     align-items: center;
 
@@ -432,8 +429,8 @@ nav a.link-site-active {
 }
 
 .clients-icon{
-    height: 92px;
-    width: 170px;
+    width: 106px;
+    height: 60px;
     fill: #AFB1B8;
 }
 
@@ -443,6 +440,9 @@ nav a.link-site-active {
 }
 
 .clients-link{
+    align-items: center;
+    justify-content: center;
+
     outline: transparent;
     display: flex;    
     border: 1px solid #AFB1B8;
